@@ -3,23 +3,24 @@
 <head>
 <meta charset="utf-8">
 <title>Portfolio Project 1</title>   
+<link href="{{site.baseurl}}/css/common.css" rel="stylesheet">
 </head>
 
+
+<header>   
+<h1>This is the best Portfolio Project ever</h1>
+
+{% include nav.html %}
+</header>
 <body>
     
-<h1>This is the best Portfolio Project ever</h1>
-<nav>
-    <ul>
-        <li><a href="{{site.baseurl}}/index.html">Home</a></li>
-        <li><a href="{{site.baseurl}}/news.html">News</a></li>
-
-        
-    </ul>
-    
-    
-</nav>
-    
 {{ content }}
+    
+<footer>
+{% include nav.html %}
+
+<p>Copyright Portfolio Project 1</p>
+</footer>    
     
 </body>
     
